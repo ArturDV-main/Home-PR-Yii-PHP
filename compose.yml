@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  myapp:
+    image: shinsenter/yii:latest
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./src:/var/www/html
