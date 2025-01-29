@@ -17,7 +17,7 @@ services:
       POSTGRES_PASSWORD: 326  # Установка пароля для пользователя postgres
       PGDATA: /var/lib/postgresql/data/pgdata  # Путь для хранения данных
     volumes:
-      - /pgdb:/var/lib/postgresql/data  # Монтирование директории на хосте
+      - ./pgdb:/var/lib/postgresql/data  # Монтирование директории на хосте
     ports:
       - "5432:5432"
     restart: always  # Опция перезапуска контейнера 
