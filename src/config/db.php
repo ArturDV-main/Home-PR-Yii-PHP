@@ -2,12 +2,12 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '',
-    'charset' => 'utf8',
-
-    // Schema cache options (for production environment)
+    'dsn' => 'pgsql:host=localhost;dbname=mydatabase',  // Замените на ваш DSN для PostgreSQL
+    'username' => 'postgres',  // Имя пользователя PostgreSQL
+    'password' => '326',       // Пароль для пользователя PostgreSQL
+    'charset' => 'utf8',       // Кодировка
+    
+    // Опции кэша схемы (для производственной среды)
     //'enableSchemaCache' => true,
     //'schemaCacheDuration' => 60,
     //'schemaCache' => 'cache',
