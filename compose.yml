@@ -10,14 +10,14 @@ services:
     volumes:
       - ./src:/var/www/html
   mypg:
-    image: postgres  # Используем образ PostgreSQL
-    container_name: pgdb  # Имя контейнера
+    image: postgres 
+    container_name: pgdb 
     environment:
-      POSTGRES_DB: mydatabase  # Установка базы данных
-      POSTGRES_PASSWORD: 326  # Установка пароля для пользователя postgres
-      PGDATA: /var/lib/postgresql/data/pgdata  # Путь для хранения данных
+      POSTGRES_DB: mydatabase
+      POSTGRES_PASSWORD: 326 
+      PGDATA: /var/lib/postgresql/data/pgdata 
     volumes:
-      - ./pgdb:/var/lib/postgresql/data  # Монтирование директории на хосте
+      - ./pgdb:/var/lib/postgresql/data
     ports:
       - "5432:5432"
-    restart: always  # Опция перезапуска контейнера 
+    restart: always

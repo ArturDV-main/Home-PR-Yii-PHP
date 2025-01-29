@@ -1,3 +1,4 @@
+-- Active: 1738131601315@@127.0.0.1@5432@mydatabase
 CREATE TABLE country (
   code CHAR(2) NOT NULL PRIMARY KEY,
   name CHAR(52) NOT NULL,
