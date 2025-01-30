@@ -1,7 +1,11 @@
 <?php
 
+/** @var app\models\EntryForm $model */
+/** @var yii\bootstrap5\ActiveForm $form */
+
+/** @var yii\web\View $this */
+
 use yii\helpers\Html;
-// use yii\widgets\ActiveForm;
 use yii\bootstrap5\ActiveForm;
 
 ?>
